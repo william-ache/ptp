@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Promociones Torres Publicidad | Merchandising, Promotores y BTL</title>
+<meta name="description" content="Merchandising corporativo, promotores de marca y publicidad BTL. Hacemos que tu marca sea inolvidable.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@0.263.1/dist/umd/lucide.min.js"></script>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{colors:{ink:'#0B1B3A',ink2:'#112650',ink3:'#173269',volt:'#1E9BC9',cyan2:'#5BC0EB',sun:'#FACC15'},fontFamily:{display:['Bricolage Grotesque','sans-serif'],body:['DM Sans','sans-serif']}}}}
+</script>
+<style>
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:#0B1B3A;color:#E2E8F0}
+h1,h2,h3,.font-display{font-family:'Bricolage Grotesque',sans-serif;letter-spacing:-.02em}
+.img-fb{background:linear-gradient(135deg,#1D4E9F,#1E9BC9)}
+.card{transition:transform .3s,border-color .3s,box-shadow .3s}
+.card:hover{transform:translateY(-6px);border-color:#1E9BC9;box-shadow:0 20px 40px -20px rgba(30,155,201,.5)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+.float-a{animation:fl 6s ease-in-out infinite}.float-b{animation:fl 7s ease-in-out infinite reverse}
+@keyframes fl{50%{transform:translateY(-14px) rotate(1deg)}}
+.chip.active{background:#1E9BC9;color:#fff;border-color:#1E9BC9}
+.btn{background:linear-gradient(135deg,#1D4E9F,#1788BE);transition:transform .2s,filter .2s}.btn:hover{filter:brightness(1.15);transform:scale(1.04)}
+input,select,textarea{outline:none}
+input:focus,select:focus,textarea:focus{border-color:#5BC0EB!important;box-shadow:0 0 0 3px rgba(91,192,235,.25)}
+.err{border-color:#F43F5E!important}
+a:focus-visible,button:focus-visible{outline:2px solid #5BC0EB;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-ink/80 border-b border-white/10">
+  <nav class="max-w-7xl mx-auto px-5 h-16 flex items-center justify-between">
+    <a href="#inicio" aria-label="Promociones Torres Publicidad"><img src="assets/logo.png" alt="Promociones Torres Publicidad, C.A." class="h-11 w-auto bg-white rounded-lg px-2"></a>
+    <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
+      <a class="hover:text-white" href="#servicios">Servicios</a>
+      <a class="hover:text-white" href="#catalogo">Catálogo</a>
+      <a class="hover:text-white" href="#nosotros">Por qué elegirnos</a>
+      <a class="hover:text-white" href="#proceso">Proceso</a>
+      <a class="hover:text-white" href="#testimonios">Clientes</a>
+      <a href="#cotizar" class="btn text-white font-bold px-5 py-2.5 rounded-full transition ">Cotizar proyecto</a>
+    </div>
+    <button id="menuBtn" class="lg:hidden p-2 text-white" aria-label="Abrir menú"><i data-lucide="menu"></i></button>
+  </nav>
+  <div id="mobileMenu" class="hidden lg:hidden bg-ink border-t border-white/10 px-5 py-4 space-y-3 text-slate-200">
+    <a class="block" href="#servicios">Servicios</a><a class="block" href="#catalogo">Catálogo</a>
+    <a class="block" href="#nosotros">Por qué elegirnos</a><a class="block" href="#proceso">Proceso</a>
+    <a class="block" href="#testimonios">Clientes</a>
+    <a href="#cotizar" class="block text-center bg-volt text-white font-bold px-5 py-3 rounded-full">Cotizar proyecto</a>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="inicio" class="relative pt-32 pb-20 overflow-hidden">
+  <div class="absolute -top-32 -right-32 w-[500px] h-[500px] bg-volt/25 rounded-full blur-[120px]"></div>
+  <div class="absolute bottom-0 -left-32 w-[400px] h-[400px] bg-cyan2/15 rounded-full blur-[120px]"></div>
+  <div class="relative max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-14 items-center">
+    <div>
+      <p class="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 text-sm text-slate-300 mb-6">
+        <span class="w-2 h-2 rounded-full bg-sun animate-pulse"></span> Agencia de activaciones BTL con cobertura nacional
+      </p>
+      <h1 class="text-5xl sm:text-6xl xl:text-7xl font-extrabold text-white leading-[1.02]">
+        Haz que tu marca sea imposible de olvidar.
+      </h1>
+      <p class="mt-6 text-lg text-slate-300 max-w-xl">
+        Creamos merchandising que la gente quiere conservar, ponemos promotores que venden con actitud y producimos publicidad que se ve desde el pasillo más lejano. Todo en un solo equipo.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="#cotizar" class="btn text-white font-bold px-8 py-4 rounded-full transition shadow-lg shadow-volt/30">Cotizar mi campaña</a>
+        <a href="#servicios" class="border border-white/25 hover:border-cyan2 hover:text-cyan2 text-white font-bold px-8 py-4 rounded-full transition">Ver servicios</a>
+      </div>
+    </div>
+    <div class="relative h-[460px] sm:h-[520px]">
+      <img src="assets/hero.svg" alt="Activación de marca en evento" class="img-fb absolute right-0 top-0 w-[78%] h-[78%] object-cover rounded-[2rem] border border-white/10">
+      <img src="assets/catalogo-1.svg" alt="Bolsas promocionales" class="img-fb float-b absolute left-0 bottom-0 w-[48%] h-[44%] object-cover rounded-3xl border-4 border-ink">
+      <div class="float-a absolute left-2 top-10 bg-white text-ink rounded-2xl p-4 shadow-xl flex items-center gap-3">
+        <div class="bg-volt/15 text-volt p-2.5 rounded-xl"><i data-lucide="trending-up"></i></div>
+        <div><p class="font-display font-extrabold text-xl leading-none">+38%</p><p class="text-xs text-slate-500">ventas en punto de venta</p></div>
+      </div>
+      <div class="float-b absolute right-4 bottom-6 bg-ink3 border border-white/10 rounded-2xl p-4 shadow-xl flex items-center gap-3">
+        <div class="bg-cyan2/15 text-cyan2 p-2.5 rounded-xl"><i data-lucide="users"></i></div>
+        <div><p class="font-display font-extrabold text-white text-xl leading-none">120</p><p class="text-xs text-slate-400">promotores activos hoy</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTRICAS -->
+<section class="border-y border-white/10 bg-ink2">
+  <div class="max-w-7xl mx-auto px-5 py-10 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+    <div><p class="font-display text-4xl font-extrabold text-volt">+<span data-count="500">500</span></p><p class="text-slate-400 mt-1">Campañas exitosas</p></div>
+    <div><p class="font-display text-4xl font-extrabold text-cyan2">+<span data-count="150">150</span></p><p class="text-slate-400 mt-1">Marcas aliadas</p></div>
+    <div><p class="font-display text-4xl font-extrabold text-sun">+<span data-count="10000">10,000</span></p><p class="text-slate-400 mt-1">Productos entregados</p></div>
+    <div><p class="font-display text-4xl font-extrabold text-white">100%</p><p class="text-slate-400 mt-1">Cobertura nacional</p></div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="py-24">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="max-w-2xl reveal">
+      <h2 class="text-4xl sm:text-5xl font-extrabold text-white">Tres formas de llegar a tu cliente</h2>
+      <p class="mt-4 text-slate-300 text-lg">Combina los servicios que necesites o deja que armemos la campaña completa por ti.</p>
+    </div>
+    <div class="mt-14 grid md:grid-cols-3 gap-6">
+      <article class="card reveal bg-ink2 border border-white/10 rounded-3xl p-8">
+        <div class="w-14 h-14 rounded-2xl bg-volt/15 text-volt flex items-center justify-center mb-6"><i data-lucide="gift"></i></div>
+        <h3 class="text-2xl font-bold text-white">Merchandising corporativo</h3>
+        <p class="mt-3 text-slate-300">Regalos empresariales que se usan de verdad: textiles, tecnología, drinkware y artículos POP personalizados con tu marca.</p>
+        <ul class="mt-5 space-y-2 text-sm text-slate-400">
+          <li class="flex gap-2"><i data-lucide="check" class="w-4 text-volt shrink-0"></i>Camisetas, gorras y uniformes</li>
+          <li class="flex gap-2"><i data-lucide="check" class="w-4 text-volt shrink-0"></i>Power banks, USB y audio</li>
+          <li class="flex gap-2"><i data-lucide="check" class="w-4 text-volt shrink-0"></i>Kits de bienvenida y termos</li>
+        </ul>
+      </article>
+      <article class="card reveal bg-ink2 border border-white/10 rounded-3xl p-8">
+        <div class="w-14 h-14 rounded-2xl bg-cyan2/15 text-cyan2 flex items-center justify-center mb-6"><i data-lucide="megaphone"></i></div>
+        <h3 class="text-2xl font-bold text-white">Promotores y activaciones BTL</h3>
+        <p class="mt-3 text-slate-300">Personal capacitado que conecta con el público: impulsadores en punto de venta, anfitrionas, degustaciones y eventos.</p>
+        <ul class="mt-5 space-y-2 text-sm text-slate-400">
+          <li class="flex gap-2"><i data-lucide="check" class="w-4 text-cyan2 shrink-0"></i>Impulso en supermercados y retail</li>
+          <li class="flex gap-2"><i data-lucide="check" class="w-4 text-cyan2 shrink-0"></i>Sampling y degustaciones</li>
+          <li class="flex gap-2"><i data-lucide="check" class="w-4 text-cyan2 shrink-0"></i>Staff para ferias y lanzamientos</li>
+        </ul>
+      </article>
+      <article class="card reveal bg-ink2 border border-white/10 rounded-3xl p-8">
+        <div class="w-14 h-14 rounded-2xl bg-sun/15 text-sun flex items-center justify-center mb-6"><i data-lucide="printer"></i></div>
+        <h3 class="text-2xl font-bold text-white">Publicidad y material P.O.P.</h3>
+        <p class="mt-3 text-slate-300">Impresión de gran formato y estructuras que destacan en el punto de venta con colores fieles a tu identidad.</p>
+        <ul class="mt-5 space-y-2 text-sm text-slate-400">
+          <li class="flex gap-2"><i data-lucide="check" class="w-4 text-sun shrink-0"></i>Lonas, banners y vinil</li>
+          <li class="flex gap-2"><i data-lucide="check" class="w-4 text-sun shrink-0"></i>Stands y exhibidores</li>
+          <li class="flex gap-2"><i data-lucide="check" class="w-4 text-sun shrink-0"></i>Branding de locales y vehículos</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CATÁLOGO -->
+<section id="catalogo" class="py-24 bg-ink2">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 reveal">
+      <div>
+        <h2 class="text-4xl sm:text-5xl font-extrabold text-white">Catálogo destacado</h2>
+        <p class="mt-3 text-slate-300">Una muestra de lo que producimos cada semana.</p>
+      </div>
+      <div id="filters" class="flex flex-wrap gap-2">
+        <button data-f="all" class="chip active border border-white/20 rounded-full px-5 py-2 text-sm font-medium transition">Todos</button>
+        <button data-f="merch" class="chip border border-white/20 rounded-full px-5 py-2 text-sm font-medium transition">Merchandising</button>
+        <button data-f="btl" class="chip border border-white/20 rounded-full px-5 py-2 text-sm font-medium transition">Eventos/BTL</button>
+        <button data-f="print" class="chip border border-white/20 rounded-full px-5 py-2 text-sm font-medium transition">Impresos</button>
+      </div>
+    </div>
+    <div id="grid" class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+</section>
+
+<!-- DIFERENCIADORES -->
+<section id="nosotros" class="py-24">
+  <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-14 items-center">
+    <div class="reveal">
+      <h2 class="text-4xl sm:text-5xl font-extrabold text-white">Lo que nos separa del resto</h2>
+      <p class="mt-4 text-slate-300 text-lg max-w-lg">Muchas agencias prometen. Nosotros entregamos a tiempo, con la calidad aprobada y con gente que da la cara por tu marca.</p>
+      <img src="assets/nosotros.svg" alt="Taller de impresión y diseño" class="img-fb mt-8 rounded-3xl w-full h-64 object-cover border border-white/10">
+    </div>
+    <div class="grid sm:grid-cols-2 gap-5">
+      <div class="card reveal bg-ink2 border border-white/10 rounded-3xl p-6"><i data-lucide="badge-check" class="text-volt mb-4"></i><h3 class="font-bold text-white text-lg">Calidad de impresión garantizada</h3><p class="text-slate-400 text-sm mt-2">Prueba de color antes de producir. Si no coincide con tu marca, lo reimprimimos sin costo.</p></div>
+      <div class="card reveal bg-ink2 border border-white/10 rounded-3xl p-6"><i data-lucide="smile" class="text-cyan2 mb-4"></i><h3 class="font-bold text-white text-lg">Personal capacitado y con actitud</h3><p class="text-slate-400 text-sm mt-2">Seleccionamos y entrenamos a cada promotor con el guion y los datos de tu producto.</p></div>
+      <div class="card reveal bg-ink2 border border-white/10 rounded-3xl p-6"><i data-lucide="timer" class="text-sun mb-4"></i><h3 class="font-bold text-white text-lg">Entregas puntuales</h3><p class="text-slate-400 text-sm mt-2">Cumplimos fechas de lanzamiento y eventos. 96% de pedidos entregados en el plazo acordado.</p></div>
+      <div class="card reveal bg-ink2 border border-white/10 rounded-3xl p-6"><i data-lucide="lightbulb" class="text-volt mb-4"></i><h3 class="font-bold text-white text-lg">Asesoría creativa integral</h3><p class="text-slate-400 text-sm mt-2">Desde el concepto hasta la ejecución: te proponemos ideas que se ajustan a tu presupuesto.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section id="proceso" class="py-24 bg-ink2">
+  <div class="max-w-7xl mx-auto px-5">
+    <h2 class="text-4xl sm:text-5xl font-extrabold text-white max-w-2xl reveal">De tu solicitud a la campaña en la calle</h2>
+    <ol class="mt-14 grid md:grid-cols-4 gap-6">
+      <li class="reveal relative bg-ink border border-white/10 rounded-3xl p-7"><span class="font-display text-5xl font-extrabold text-volt">1</span><h3 class="mt-3 font-bold text-white text-lg">Cuéntanos tu objetivo</h3><p class="text-slate-400 text-sm mt-2">Llena el formulario o escríbenos. Respondemos en menos de 24 horas.</p></li>
+      <li class="reveal bg-ink border border-white/10 rounded-3xl p-7"><span class="font-display text-5xl font-extrabold text-cyan2">2</span><h3 class="mt-3 font-bold text-white text-lg">Propuesta y cotización</h3><p class="text-slate-400 text-sm mt-2">Recibes ideas creativas, muestras y un presupuesto claro, sin costos ocultos.</p></li>
+      <li class="reveal bg-ink border border-white/10 rounded-3xl p-7"><span class="font-display text-5xl font-extrabold text-sun">3</span><h3 class="mt-3 font-bold text-white text-lg">Producción y capacitación</h3><p class="text-slate-400 text-sm mt-2">Fabricamos, imprimimos y entrenamos al personal con tu aprobación en cada paso.</p></li>
+      <li class="reveal bg-ink border border-white/10 rounded-3xl p-7"><span class="font-display text-5xl font-extrabold text-white">4</span><h3 class="mt-3 font-bold text-white text-lg">Ejecución y reporte</h3><p class="text-slate-400 text-sm mt-2">Lanzamos la campaña y te entregamos fotos, cifras y resultados.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios" class="py-24">
+  <div class="max-w-7xl mx-auto px-5">
+    <h2 class="text-4xl sm:text-5xl font-extrabold text-white max-w-2xl reveal">Gerentes de marketing que repiten con nosotros</h2>
+    <div class="mt-14 grid md:grid-cols-3 gap-6">
+      <figure class="card reveal bg-ink2 border border-white/10 rounded-3xl p-8">
+        <div class="flex gap-1 text-sun mb-4"><i data-lucide="star" class="fill-current w-4"></i><i data-lucide="star" class="fill-current w-4"></i><i data-lucide="star" class="fill-current w-4"></i><i data-lucide="star" class="fill-current w-4"></i><i data-lucide="star" class="fill-current w-4"></i></div>
+        <blockquote class="text-slate-200">“Activaron 40 puntos de venta en una semana. Los promotores conocían el producto mejor que algunos de nuestros vendedores.”</blockquote>
+        <figcaption class="mt-6 flex items-center gap-3"><span class="w-11 h-11 rounded-full bg-volt flex items-center justify-center font-bold text-white">CM</span><span><b class="text-white block">Carolina Mendoza</b><span class="text-sm text-slate-400">Gerente de Marketing, Lácteos Del Valle</span></span></figcaption>
+      </figure>
+      <figure class="card reveal bg-ink2 border border-white/10 rounded-3xl p-8">
+        <div class="flex gap-1 text-sun mb-4"><i data-lucide="star" class="fill-current w-4"></i><i data-lucide="star" class="fill-current w-4"></i><i data-lucide="star" class="fill-current w-4"></i><i data-lucide="star" class="fill-current w-4"></i><i data-lucide="star" class="fill-current w-4"></i></div>
+        <blockquote class="text-slate-200">“Pedimos 3,000 kits de bienvenida con poco tiempo. Llegaron antes de la fecha y los colores salieron idénticos a nuestro manual de marca.”</blockquote>
+        <figcaption class="mt-6 flex items-center gap-3"><span class="w-11 h-11 rounded-full bg-cyan2 flex items-center justify-center font-bold text-ink">RS</span><span><b class="text-white block">Ricardo Salazar</b><span class="text-sm text-slate-400">Director de Marca, Banco Andino</span></span></figcaption>
+      </figure>
+      <figure class="card reveal bg-ink2 border border-white/10 rounded-3xl p-8">
+        <div class="flex gap-1 text-sun mb-4"><i data-lucide="star" class="fill-current w-4"></i><i data-lucide="star" class="fill-current w-4"></i><i data-lucide="star" class="fill-current w-4"></i><i data-lucide="star" class="fill-current w-4"></i><i data-lucide="star" class="fill-current w-4"></i></div>
+        <blockquote class="text-slate-200">“Su asesoría creativa nos ahorró presupuesto. Cambiaron un stand costoso por un exhibidor modular que generó más tráfico.”</blockquote>
+        <figcaption class="mt-6 flex items-center gap-3"><span class="w-11 h-11 rounded-full bg-sun flex items-center justify-center font-bold text-ink">LP</span><span><b class="text-white block">Laura Paredes</b><span class="text-sm text-slate-400">Jefa de Trade Marketing, SuperMax Retail</span></span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- COTIZAR -->
+<section id="cotizar" class="py-24 bg-gradient-to-b from-ink2 to-ink">
+  <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-14">
+    <div class="reveal">
+      <h2 class="text-4xl sm:text-5xl font-extrabold text-white">Cuéntanos tu idea y la cotizamos</h2>
+      <p class="mt-4 text-slate-300 text-lg max-w-md">Recibirás una propuesta con costos y tiempos en menos de 24 horas hábiles.</p>
+      <ul class="mt-8 space-y-4 text-slate-300">
+        <li class="flex items-center gap-3"><i data-lucide="phone" class="text-volt"></i> +57 300 123 4567</li>
+        <li class="flex items-center gap-3"><i data-lucide="mail" class="text-cyan2"></i> ventas@promocionestorres.com</li>
+        <li class="flex items-center gap-3"><i data-lucide="map-pin" class="text-sun"></i> Av. Principal 123, Oficina 4B, Ciudad de ejemplo</li>
+        <li class="flex items-center gap-3"><i data-lucide="clock" class="text-volt"></i> Lunes a viernes, 8:00 a.m. a 6:00 p.m.</li>
+      </ul>
+    </div>
+    <form id="quoteForm" novalidate class="reveal bg-ink2 border border-white/10 rounded-3xl p-8 space-y-5">
+      <div><label for="nombre" class="block text-sm font-medium mb-1.5">Nombre</label>
+        <input id="nombre" required class="w-full bg-ink border border-white/15 rounded-xl px-4 py-3 text-white" placeholder="Tu nombre completo"><p class="text-rose-400 text-xs mt-1 hidden">Escribe tu nombre.</p></div>
+      <div><label for="empresa" class="block text-sm font-medium mb-1.5">Empresa</label>
+        <input id="empresa" required class="w-full bg-ink border border-white/15 rounded-xl px-4 py-3 text-white" placeholder="Nombre de tu empresa"><p class="text-rose-400 text-xs mt-1 hidden">Escribe el nombre de tu empresa.</p></div>
+      <div><label for="servicio" class="block text-sm font-medium mb-1.5">Servicio de interés</label>
+        <select id="servicio" required class="w-full bg-ink border border-white/15 rounded-xl px-4 py-3 text-white">
+          <option value="">Selecciona una opción</option><option>Merchandising corporativo</option><option>Promotores y activaciones BTL</option><option>Publicidad y material P.O.P.</option><option>Campaña integral</option></select><p class="text-rose-400 text-xs mt-1 hidden">Elige un servicio.</p></div>
+      <div><label for="mensaje" class="block text-sm font-medium mb-1.5">Mensaje</label>
+        <textarea id="mensaje" rows="4" required class="w-full bg-ink border border-white/15 rounded-xl px-4 py-3 text-white" placeholder="Cantidad, fechas, ciudad y objetivo de la campaña"></textarea><p class="text-rose-400 text-xs mt-1 hidden">Cuéntanos brevemente qué necesitas.</p></div>
+      <button class="w-full btn text-white font-bold py-4 rounded-full transition ">Enviar solicitud</button>
+      <p id="ok" class="hidden text-center text-cyan2 font-medium">Solicitud enviada. Te escribimos en menos de 24 horas.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="border-t border-white/10 bg-ink">
+  <div class="max-w-7xl mx-auto px-5 py-12 grid md:grid-cols-3 gap-10 text-sm text-slate-400">
+    <div><img src="assets/logo.png" alt="Promociones Torres Publicidad, C.A." class="h-14 w-auto bg-white rounded-lg px-2"><p class="mt-3 max-w-xs">Merchandising, promotores y publicidad BTL para marcas que quieren ser recordadas.</p></div>
+    <div><p class="text-white font-bold mb-3">Enlaces rápidos</p><div class="space-y-2"><a class="block hover:text-white" href="#servicios">Servicios</a><a class="block hover:text-white" href="#catalogo">Catálogo</a><a class="block hover:text-white" href="#proceso">Proceso</a><a class="block hover:text-white" href="#cotizar">Cotizar</a></div></div>
+    <div><p class="text-white font-bold mb-3">Síguenos</p><div class="flex gap-3">
+      <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center hover:border-volt hover:text-volt"><i data-lucide="instagram" class="w-4"></i></a>
+      <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center hover:border-volt hover:text-volt"><i data-lucide="facebook" class="w-4"></i></a>
+      <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center hover:border-volt hover:text-volt"><i data-lucide="linkedin" class="w-4"></i></a>
+      <a href="#" aria-label="YouTube" class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center hover:border-volt hover:text-volt"><i data-lucide="youtube" class="w-4"></i></a></div></div>
+  </div>
+  <p class="text-center text-xs text-slate-500 pb-8">© 2026 Promociones Torres Publicidad. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+// Catálogo
+const items=[
+ {t:'Kit de bienvenida corporativo',c:'merch',l:'Merchandising',i:'assets/catalogo-1.svg'},
+ {t:'Termos y drinkware personalizado',c:'merch',l:'Merchandising',i:'assets/catalogo-2.svg'},
+ {t:'Activación en centro comercial',c:'btl',l:'Eventos/BTL',i:'assets/catalogo-3.svg'},
+ {t:'Promotores en punto de venta',c:'btl',l:'Eventos/BTL',i:'assets/catalogo-4.svg'},
+ {t:'Banners y lonas de gran formato',c:'print',l:'Impresos',i:'assets/catalogo-5.svg'},
+ {t:'Stand modular para ferias',c:'print',l:'Impresos',i:'assets/catalogo-6.svg'}];
+const grid=document.getElementById('grid');
+grid.innerHTML=items.map(p=>`<article data-c="${p.c}" class="card cat group bg-ink border border-white/10 rounded-3xl overflow-hidden">
+ <div class="relative h-56 overflow-hidden"><img loading="lazy" src="${p.i}" alt="${p.t}" class="img-fb w-full h-full object-cover transition duration-500 group-hover:scale-110">
+ <span class="absolute top-4 left-4 bg-ink/85 backdrop-blur text-xs font-bold px-3 py-1 rounded-full text-sun">${p.l}</span></div>
+ <div class="p-6 flex items-center justify-between gap-3"><h3 class="font-bold text-white">${p.t}</h3><a href="#cotizar" class="shrink-0 w-10 h-10 rounded-full bg-volt/15 text-volt flex items-center justify-center hover:bg-volt hover:text-white transition" aria-label="Cotizar"><i data-lucide="arrow-up-right" class="w-4"></i></a></div></article>`).join('');
+document.querySelectorAll('#grid img').forEach(im=>im.addEventListener('error',()=>im.removeAttribute('src')));
+document.querySelectorAll('#filters .chip').forEach(b=>b.addEventListener('click',()=>{
+ document.querySelectorAll('#filters .chip').forEach(x=>x.classList.remove('active'));b.classList.add('active');
+ document.querySelectorAll('.cat').forEach(c=>c.style.display=(b.dataset.f==='all'||c.dataset.c===b.dataset.f)?'':'none');}));
+// Menú móvil
+const mm=document.getElementById('mobileMenu');
+document.getElementById('menuBtn').onclick=()=>mm.classList.toggle('hidden');
+mm.querySelectorAll('a').forEach(a=>a.onclick=()=>mm.classList.add('hidden'));
+// Scroll reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%4)*80+'ms';io.observe(el)});
+// Contadores
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);
+ const end=+e.target.dataset.count;let s=null;const step=t=>{s=s||t;const p=Math.min((t-s)/1400,1);
+ e.target.textContent=Math.floor(end*p).toLocaleString('en-US');if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step)}),{threshold:.6});
+document.querySelectorAll('[data-count]').forEach(el=>co.observe(el));
+// Formulario
+const form=document.getElementById('quoteForm');
+form.addEventListener('submit',e=>{e.preventDefault();let ok=true;
+ form.querySelectorAll('[required]').forEach(f=>{const bad=!f.value.trim();f.classList.toggle('err',bad);f.parentElement.querySelector('p').classList.toggle('hidden',!bad);if(bad)ok=false});
+ if(ok){document.getElementById('ok').classList.remove('hidden');form.reset()}});
+form.querySelectorAll('[required]').forEach(f=>f.addEventListener('input',()=>{f.classList.remove('err');f.parentElement.querySelector('p').classList.add('hidden')}));
+lucide.createIcons();
+</script>
+</body>
+</html>
